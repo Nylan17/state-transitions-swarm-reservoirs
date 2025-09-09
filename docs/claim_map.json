@@ -1,0 +1,84 @@
+{
+  "scaling_main": {
+    "fit": { "slope": 0.0123, "intercept": 1.61, "slope_ci": [0.0122, 0.0123] },
+    "perN": [
+      { "N": 800,  "mean": 11.41, "ci95": 0.08, "n": 15 },
+      { "N": 1200, "mean": 16.36, "ci95": 0.05, "n": 15 },
+      { "N": 1600, "mean": 21.22, "ci95": 0.05, "n": 15 },
+      { "N": 2000, "mean": 26.14, "ci95": 0.06, "n": 15 }
+    ],
+    "sources": [
+      "boid_reservoirs/results/mc_scaling_summary.md",
+      "boid_reservoirs/results/mc_slope_ci.md",
+      "boid_reservoirs/results/mc_perN_summary.md",
+      "boid_reservoirs/results/gpu_scaling_complete.csv"
+    ]
+  },
+  "scaling_pure_mc": {
+    "fit": { "slope": 0.0122, "intercept": 1.64 },
+    "perN": [
+      { "N": 800,  "mean": 11.42, "ci95": 0.08, "n": 10 },
+      { "N": 1600, "mean": 21.21, "ci95": 0.03, "n": 10 }
+    ],
+    "sources": [
+      "boid_reservoirs/results/mc_scaling_pure.md",
+      "boid_reservoirs/results/gpu_scaling_pure_mc_partial.csv"
+    ]
+  },
+  "ablation_pure_mc": {
+    "N800": {
+      "single_state": { "mean": 0.11, "ci95": 0.02, "n": 10 },
+      "two_state":    { "mean": 11.43, "ci95": 0.11, "n": 10 },
+      "source": "boid_reservoirs/results/ablation_s1_vs_s2_N800.md"
+    },
+    "N1200": {
+      "single_state": { "mean": 0.07, "ci95": 0.01, "n": 10 },
+      "two_state":    { "mean": 16.33, "ci95": 0.07, "n": 10 },
+      "source": "boid_reservoirs/results/ablation_s1_vs_s2_N1200.md"
+    },
+    "N1600": {
+      "single_state": { "mean": 0.11, "ci95": 0.01, "n": 10 },
+      "two_state":    { "mean": 21.19, "ci95": 0.05, "n": 10 },
+      "source": "boid_reservoirs/results/ablation_s1_vs_s2_N1600.md"
+    }
+  },
+  "r2_delay1": {
+    "values": [
+      { "N": 800,  "mean": 0.9517, "ci95": 0.0041, "n": 15 },
+      { "N": 1200, "mean": 0.9647, "ci95": 0.0033, "n": 15 },
+      { "N": 1600, "mean": 0.9651, "ci95": 0.0026, "n": 15 },
+      { "N": 2000, "mean": 0.9637, "ci95": 0.0014, "n": 15 }
+    ],
+    "sources": [
+      "boid_reservoirs/results/gpu_scaling_complete.csv",
+      "docs/results_scaling.md"
+    ]
+  },
+  "esn_mc": {
+    "small":  { "n_reservoir": 600,  "mean": 3.71,  "ci95": 0.04, "n": 5 },
+    "medium": { "n_reservoir": 2400, "mean": 11.65, "ci95": 0.72, "n": 5 },
+    "large":  { "n_reservoir": 4800, "mean": 16.26, "ci95": 0.71, "n": 5 },
+    "sources": [
+      "boid_reservoirs/results/comparison/esn_summary.md",
+      "boid_reservoirs/results/comparison/esn_mc_by_size.png"
+    ]
+  },
+  "mg17_verification": {
+    "single_state": {
+      "r2_mean": 0.9609326115,
+      "r2_std": 0.0017926917,
+      "nrmse_mean": 0.1976024347,
+      "nrmse_std": 0.0045460188,
+      "n": 10,
+      "source": "boid_reservoirs/results/mg17_verification_singlestate.json"
+    },
+    "multi_state": {
+      "r2_mean": -2.7620924000,
+      "r2_std": 4.5004212918,
+      "nrmse_mean": 1.6749815823,
+      "nrmse_std": 0.9780230565,
+      "n": 10,
+      "source": "boid_reservoirs/results/mg17_verification_multistate.json"
+    }
+  }
+}

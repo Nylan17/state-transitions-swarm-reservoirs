@@ -1,0 +1,58 @@
+# Multi-State Boid Reservoir Configuration
+
+# Basic simulation parameters
+N: 200
+box_size: 512.0
+dt: 0.1
+steps: 6000
+washout: 500
+init_speed: 1.0
+base_speed: 1.0
+temp_gain: 0.30
+temp_mapping: linear   #Can override via sweep.
+
+# Core boid interaction parameters
+inner_r: 15.0      # Separation radius
+target_speed: 1.0
+
+# Multi-state specific parameters
+# Local energy computation
+local_radius: 35.0
+energy_threshold: 3.0
+hysteresis_factor: 0.05
+use_hysteresis: true
+
+# Dispersed state parameters
+dispersed_outer_r: 28.0 
+dispersed_align_k: 0.5
+dispersed_coh_k: 0.5
+dispersed_sep_k: 1.2
+
+# Clustered state parameters
+clustered_outer_r: 35.0
+clustered_align_k: 1.0
+clustered_coh_k: 2.0
+clustered_sep_k: 1.0
+
+# Input coupling parameters
+temp_k: 0.1
+temp_baseline: 1.0 
+
+# Ridge regression
+ridge_alpha: 1e-6
+readout_type: ridge
+poly_degree: 2
+
+# System settings
+use_gpu: true
+random_seed: 42
+noise_std: 0.01   #to avoid degenerate states
+speed_relax: 0.7
+speed_clip: 10.0   # allow broad range but prevent numeric blow-up
+input_taps: 0 
+input_mode: mixed
+
+# Experimental
+use_leak_features: false
+leak_lambda: 0.8          #(ignored when use_leak_features=false)
+whiten_features: false

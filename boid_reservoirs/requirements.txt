@@ -1,0 +1,12 @@
+# Python 3.11.
+# CuPy package version may need to be adjusted based on your system's CUDA
+# See https://docs.cupy.dev/en/stable/install.html
+#cupy-cuda12x #uncomment if you have CUDA
+numpy
+scipy
+pandas
+scikit-learn
+networkx
+matplotlib
+PyYAML
+rich 

@@ -1,0 +1,39 @@
+# Single-state configuration for memory capacity optimization
+
+# Simulation parameters
+N: 300
+box_size: 100.0
+dt: 1.0
+steps: 6000
+washout: 500
+random_seed: 42
+init_speed: 1.0
+target_speed: 1.0
+base_speed: 1.0
+
+# Single-state boid parameters
+num_states: 1
+inner_r: 1.0
+outer_r: 5.0       # Optimal: small perception radius
+sep_k: 2.0         # Optimal: high separation
+align_k: 1.0       # Optimal: moderate alignment  
+coh_k: 0.01        # Optimal: very low cohesion
+
+# Input coupling
+input_mode: temperature
+temp_gain: 0.3
+
+# Readout parameters
+ridge_alpha: 1e-3
+ridge_lambda: 1e-3
+
+# GPU settings
+use_gpu: false
+
+# Feature settings
+use_leak_features: false
+whiten_features: false
+input_taps: 0
+
+# Use legacy features that don't assume multiple states
+use_legacy_features: true 

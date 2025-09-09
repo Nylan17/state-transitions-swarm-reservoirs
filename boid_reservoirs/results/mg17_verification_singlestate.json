@@ -1,0 +1,106 @@
+{
+  "config_path": "config/single_state_mc.yaml",
+  "task": "mackey_glass",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "results": [
+    {
+      "nrmse": 0.20329477953331745,
+      "r2": 0.9586712326144998,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 0,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.20345941374279888,
+      "r2": 0.9586042669594366,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 1,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.18957183505859132,
+      "r2": 0.9640625193525183,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 2,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.19229884550906098,
+      "r2": 0.9630211540158823,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 3,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.19533953642072108,
+      "r2": 0.9618424655109378,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 4,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.19643189962253693,
+      "r2": 0.9614145088106816,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 5,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.20262906179198067,
+      "r2": 0.9589414633173017,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 6,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.19849441130141218,
+      "r2": 0.9605999686821058,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 7,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.19994844682196763,
+      "r2": 0.9600206186134828,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 8,
+      "task": "mackey_glass"
+    },
+    {
+      "nrmse": 0.19455611733687755,
+      "r2": 0.9621479172067992,
+      "n_samples_train": 3849,
+      "n_samples_test": 1650,
+      "seed": 9,
+      "task": "mackey_glass"
+    }
+  ],
+  "summary": {
+    "n_successful": 10,
+    "n_failed": 0,
+    "nrmse_mean": 0.19760243471392647,
+    "nrmse_std": 0.0045460187817312845,
+    "r2_mean": 0.9609326115083645,
+    "r2_std": 0.0017926917310100723
+  }
+}
