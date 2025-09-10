@@ -3,7 +3,7 @@
 This repository snapshot contains the minimal code, configs, and machine‑readable data needed to reproduce the results and figures reported in the manuscript.
 
 ## Citation
-Lund T, Adams A, Aubert-Kato N, Ikegami T. State Transitions Unlock Temporal Memory in Swarm-Based Reservoir Computing. PeerJ Computer Science (under review, 2025)
+TBD
 
 ## Environment
 - Python ≥3.10
@@ -15,16 +15,16 @@ Install:
 pip install -r boid_reservoirs/requirements.txt
 ```
 
-## Reproduce Main Results
+## Reproducing the Main Results
 Run all commands from the repository root.
 
 ### 1) Ablation at fixed N (pure MC)
-Inputs: `docs/claim_map.json` (numerical ground truth) and precomputed per‑condition summaries in `boid_reservoirs/results/`.
+Inputs: `settings/claim_map.json` (numerical ground truth) and precomputed per‑condition summaries in `boid_reservoirs/results/`.
 
 Generate the grouped ablation figure (single panel, log y‑axis):
 ```bash
 python -m boid_reservoirs.src.scripts.plot_ablation_grouped \
-  --claim_map docs/claim_map.json \
+  --claim_map settings/claim_map.json \
   --out figures/ablation_all_panels.png
 ```
 
@@ -77,7 +77,7 @@ python -m boid_reservoirs.src.scripts.plot_esn_comparison \
 ### 6) Ablation per-seed CSV exporter
 ```bash
 python -m boid_reservoirs.src.scripts.export_ablation_per_seed \
-  --claim_map docs/claim_map.json \
+  --claim_map settings/claim_map.json \
   --out boid_reservoirs/results/ablation_per_seed.csv
 ```
 
@@ -126,10 +126,10 @@ Aggregate into CSVs using your preferred script or a small adapter; ensure the f
   - `boid_reservoirs/results/comparison/esn_summary.md` (optional)
   - `boid_reservoirs/results/mg17_verification_singlestate.json`
   - `boid_reservoirs/results/mg17_verification_multistate.json`
-  - `docs/claim_map.json`
+  - `settings/claim_map.json`
   - `boid_reservoirs/data/mackey_glass_17.txt` (for MG verification)
 - Seeds:
-  - `docs/seeds.yaml`
+  - `settings/seeds.yaml`
 
 ## License
 The source code in this repository is licensed under the **MIT License**. See the `LICENSE` file for more details.
