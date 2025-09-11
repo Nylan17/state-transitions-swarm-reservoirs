@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1053222416.svg)](https://doi.org/10.5281/zenodo.17096129)
 # State Transitions in Swarm-Based Reservoir Computing
 
 This repository snapshot contains the minimal code, configs, and machine‑readable data needed to reproduce the results and figures reported in the manuscript.
